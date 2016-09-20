@@ -1,13 +1,9 @@
-FROM debian:jessie
+FROM python:2.7-alpine
 MAINTAINER Dan LaMotte "lamotte85@gmail.com"
 
-RUN \
-    apt-get -qq update \
-    && apt-get install -y python python-pip python-dev build-essential \
-    && pip install Flask \
-    && rm -fr /var/lib/apt/lists/*
+RUN pip install Flask
 
 WORKDIR /app
 COPY app.py /app
 
-CMD ["/usr/bin/python", "app.py"]
+CMD ["/usr/local/bin/python", "app.py"]
