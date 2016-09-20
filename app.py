@@ -16,7 +16,7 @@ def index():
     <title>hello world!</title>
 </head>
 <body>
-    <h1>hello world! v0.3</h1>
+    <h1>hello world! v0.4</h1>
     <p>
         {ip}
     </p>
