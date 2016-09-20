@@ -12,6 +12,7 @@ def index():
 <body>
     <h1>hello world!</h1>
 </body>
+</html>
 '''
 
 if __name__ == '__main__':
